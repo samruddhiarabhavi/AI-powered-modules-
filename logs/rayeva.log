@@ -1,0 +1,26 @@
+2026-03-05 18:54:15.039 | INFO     | __main__:seed_database:1316 - Seeding database with sample data...
+2026-03-05 18:54:15.121 | WARNING  | __main__:<module>:1385 - Could not seed database: (sqlite3.OperationalError) no such table: products
+[SQL: SELECT products.id AS products_id, products.name AS products_name, products.description AS products_description, products.price AS products_price, products.sku AS products_sku, products.image_url AS products_image_url, products.primary_category AS products_primary_category, products.sub_category AS products_sub_category, products.seo_tags AS products_seo_tags, products.sustainability_filters AS products_sustainability_filters, products.ai_categorization_data AS products_ai_categorization_data, products.ai_confidence_score AS products_ai_confidence_score, products.is_active AS products_is_active, products.is_ai_categorized AS products_is_ai_categorized, products.created_at AS products_created_at, products.updated_at AS products_updated_at, products.categorized_at AS products_categorized_at 
+FROM products 
+WHERE products.sku = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('BTB-001', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-05 18:54:15.128 | INFO     | __main__:<module>:1388 - Starting server on 0.0.0.0:8000
+2026-03-05 18:54:15.211 | INFO     | __main__:startup_event:1233 - Starting Rayeva AI Systems...
+2026-03-05 18:54:15.212 | INFO     | __main__:startup_event:1234 - Environment: development
+2026-03-05 18:54:15.535 | INFO     | __main__:startup_event:1238 - Database initialized successfully
+2026-03-06 01:00:09.836 | INFO     | __main__:seed_database:1743 - Seeding database with sample data...
+2026-03-06 01:00:09.876 | WARNING  | __main__:<module>:1841 - Could not seed database: (sqlite3.OperationalError) no such column: products.conventional_plastic_g
+[SQL: SELECT products.id AS products_id, products.name AS products_name, products.description AS products_description, products.price AS products_price, products.sku AS products_sku, products.image_url AS products_image_url, products.primary_category AS products_primary_category, products.sub_category AS products_sub_category, products.seo_tags AS products_seo_tags, products.sustainability_filters AS products_sustainability_filters, products.ai_categorization_data AS products_ai_categorization_data, products.ai_confidence_score AS products_ai_confidence_score, products.conventional_plastic_g AS products_conventional_plastic_g, products.product_plastic_g AS products_product_plastic_g, products.carbon_footprint_kg AS products_carbon_footprint_kg, products.water_usage_liters AS products_water_usage_liters, products.local_sourced AS products_local_sourced, products.is_active AS products_is_active, products.is_ai_categorized AS products_is_ai_categorized, products.created_at AS products_created_at, products.updated_at AS products_updated_at, products.categorized_at AS products_categorized_at 
+FROM products 
+WHERE products.sku = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('BTB-001', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-03-06 01:00:09.878 | INFO     | __main__:<module>:1844 - Starting server on 0.0.0.0:8000
+2026-03-06 01:00:09.878 | INFO     | __main__:<module>:1845 - All 4 modules active and ready!
+2026-03-06 01:00:10.060 | INFO     | __main__:startup_event:1667 - Starting Rayeva AI Systems - All 4 Modules...
+2026-03-06 01:00:10.061 | INFO     | __main__:startup_event:1668 - Environment: development
+2026-03-06 01:00:10.387 | INFO     | __main__:startup_event:1672 - Database initialized successfully
+2026-03-06 01:00:10.388 | INFO     | __main__:startup_event:1673 - All 4 modules ready: Category Tagger, B2B Proposal, Impact Reporter, WhatsApp Bot
